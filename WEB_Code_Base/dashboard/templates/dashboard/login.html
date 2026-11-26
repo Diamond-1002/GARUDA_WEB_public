@@ -1,4 +1,0 @@
-{% load static %}<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GARUDA · Commander sign in</title><link rel="stylesheet" href="{% static 'dashboard/style.css' %}"></head>
-<body class="login-body"><main class="login-card"><div class="brand-mark">G</div><p class="eyebrow">GARUDA OPERATIONS</p><h1>Commander sign in</h1><p class="muted">Sign in with your Django commander account.</p>{% if error %}<div class="error">{{ error }}</div>{% endif %}<form method="post">{% csrf_token %}<label>Username<input name="username" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button class="primary full">Sign in</button></form><p class="muted small">Create an account with <code>python manage.py createsuperuser</code>.</p></main></body></html>
-
